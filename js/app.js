@@ -9,12 +9,7 @@ function alterarStatus(id) {
 
   if (imagem.classList.contains("dashboard__item__img--rented")) {
     let confirmacao = prompt(`Você deseja devolver o jogo ${jogo}`);
-    if (
-      confirmacao == "sim" ||
-      confirmacao == "Sim" ||
-      confirmacao == "SIM" ||
-      confirmacao == "s"
-    ) {
+    if (confirmacao == "sim" || confirmacao == "Sim") {
       imagem.classList.remove("dashboard__item__img--rented");
       botao.classList.remove("dashboard__item__button--return");
       botao.textContent = "Alugar";
